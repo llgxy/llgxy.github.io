@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Introduction on 我的烟灰缸</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in My Introduction on 我的烟灰缸</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a New Theme</title>
+      <link>http://localhost:1313/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/creating-a-new-theme/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#introduction&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>http://localhost:1313/posts/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/migrate-from-jekyll/</guid>
+      <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;&#xA;  Move static content to &lt;code&gt;static&lt;/code&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#move-static-content-to-static&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.&#xA;With Jekyll, something that looked like&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xA;    ▾ images/&#xA;        logo.png&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;should become&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xA;    ▾ static/&#xA;        ▾ images/&#xA;            logo.png&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as &lt;code&gt;CNAME&lt;/code&gt;) to be moved to &lt;code&gt;static&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>http://localhost:1313/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/goisforlovers/</guid>
+      <description>&lt;p&gt;Hugo uses the excellent &#xA;  &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; &#xA;  &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for&#xA;its template engine. It is an extremely lightweight engine that provides a very&#xA;small amount of logic. In our experience that it is just the right amount of&#xA;logic to be able to create a good static website. If you have used other&#xA;template systems from different languages or frameworks you will find a lot of&#xA;similarities in Go templates.&lt;/p&gt;&#xA;&lt;p&gt;This document is a brief primer on using Go templates. The &#xA;  &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;Go docs&lt;/a&gt;&#xA;provide more details.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://localhost:1313/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hugoisforlovers/</guid>
+      <description>&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;&#xA;  Step 1. Install Hugo&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#step-1-install-hugo&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Go to &#xA;  &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;Hugo releases&lt;/a&gt; and download the&#xA;appropriate version for your OS and architecture.&lt;/p&gt;&#xA;&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;&#xA;&lt;p&gt;More complete instructions are available at &#xA;  &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34;&gt;Install Hugo&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-2-build-the-docs&#34;&gt;&#xA;  Step 2. Build the Docs&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#step-2-build-the-docs&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Hugo has its own example site which happens to also be the documentation site&#xA;you are reading right now.&lt;/p&gt;&#xA;&lt;p&gt;Follow the following steps:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/Oracle/hidden/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/Oracle/hidden/</guid>
+      <description>&lt;h1 id=&#34;this-page-is-hidden-in-menu&#34;&gt;&#xA;  This page is hidden in menu&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#this-page-is-hidden-in-menu&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;quondam-non-pater-est-dignior-ille-eurotas&#34;&gt;&#xA;  Quondam non pater est dignior ille Eurotas&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#quondam-non-pater-est-dignior-ille-eurotas&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;latent-te-facies&#34;&gt;&#xA;  Latent te facies&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#latent-te-facies&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus,&#xA;frementes, qui in vel. Hippotades Peleus &#xA;  &lt;a href=&#34;http://gratia.net/tot-qua.php&#34;&gt;pennas&#xA;conscia&lt;/a&gt; cuiquam Caeneus quas.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pater demittere evincitque reddunt&lt;/li&gt;&#xA;&lt;li&gt;Maxime adhuc pressit huc Danaas quid freta&lt;/li&gt;&#xA;&lt;li&gt;Soror ego&lt;/li&gt;&#xA;&lt;li&gt;Luctus linguam saxa ultroque prior Tatiumque inquit&lt;/li&gt;&#xA;&lt;li&gt;Saepe liquitur subita superata dederat Anius sudor&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;cum-honorum-latona&#34;&gt;&#xA;  Cum honorum Latona&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#cum-honorum-latona&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;O fallor &#xA;  &lt;a href=&#34;http://www.spectataharundine.org/aquas-relinquit.html&#34;&gt;in sustinui&#xA;iussorum&lt;/a&gt; equidem.&#xA;Nymphae operi oris alii fronde parens dumque, in auro ait mox ingenti proxima&#xA;iamdudum maius?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/Oracle/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/3rd-level/4th-level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/Oracle/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/3rd-level/4th-level/</guid>
+      <description>&lt;h1 id=&#34;4th-level-of-menu&#34;&gt;&#xA;  4th Level of Menu&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#4th-level-of-menu&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;&#xA;  Caesorum illa tu sentit micat vestes papyriferi&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Inde aderam facti; Theseus vis de tauri illa peream. Oculos &lt;strong&gt;uberaque&lt;/strong&gt; non&#xA;regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo;&#xA;gestanda nitidi, vero? Dum ne pectoraque testantur.&lt;/p&gt;&#xA;&lt;p&gt;Venasque repulsa Samos qui, exspectatum eram animosque hinc, &#xA;  &lt;a href=&#34;http://www.creveratnon.net/apricaaetheriis&#34;&gt;aut&#xA;manes&lt;/a&gt;, Assyrii. Cupiens auctoribus&#xA;pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae&#xA;iusto! Sedes ante dum superest &lt;strong&gt;extrema&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/Oracle/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/3rd-level/4th-level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/Oracle/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/3rd-level/4th-level/</guid>
+      <description>&lt;h1 id=&#34;4th-level-of-menu&#34;&gt;&#xA;  4th Level of Menu&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#4th-level-of-menu&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;&#xA;  Caesorum illa tu sentit micat vestes papyriferi&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Inde aderam facti; Theseus vis de tauri illa peream. Oculos &lt;strong&gt;uberaque&lt;/strong&gt; non&#xA;regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo;&#xA;gestanda nitidi, vero? Dum ne pectoraque testantur.&lt;/p&gt;&#xA;&lt;p&gt;Venasque repulsa Samos qui, exspectatum eram animosque hinc, &#xA;  &lt;a href=&#34;http://www.creveratnon.net/apricaaetheriis&#34;&gt;aut&#xA;manes&lt;/a&gt;, Assyrii. Cupiens auctoribus&#xA;pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae&#xA;iusto! Sedes ante dum superest &lt;strong&gt;extrema&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/PG/section/first-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/PG/section/first-page/</guid>
+      <description>&lt;h1 id=&#34;first-page&#34;&gt;&#xA;  First page&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#first-page&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/PG/section/second-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/PG/section/second-page/</guid>
+      <description>&lt;h1 id=&#34;second-page&#34;&gt;&#xA;  Second Page&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#second-page&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/PG/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/3rd-level/4th-level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/PG/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/3rd-level/4th-level/</guid>
+      <description>&lt;h1 id=&#34;4th-level-of-menu&#34;&gt;&#xA;  4th Level of Menu&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#4th-level-of-menu&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;&#xA;  Caesorum illa tu sentit micat vestes papyriferi&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Inde aderam facti; Theseus vis de tauri illa peream. Oculos &lt;strong&gt;uberaque&lt;/strong&gt; non&#xA;regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo;&#xA;gestanda nitidi, vero? Dum ne pectoraque testantur.&lt;/p&gt;&#xA;&lt;p&gt;Venasque repulsa Samos qui, exspectatum eram animosque hinc, &#xA;  &lt;a href=&#34;http://www.creveratnon.net/apricaaetheriis&#34;&gt;aut&#xA;manes&lt;/a&gt;, Assyrii. Cupiens auctoribus&#xA;pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae&#xA;iusto! Sedes ante dum superest &lt;strong&gt;extrema&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/PG/%E6%96%B0%E6%89%8B%E5%AD%A6%E4%B9%A0/3rd-level/4th-level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/PG/%E6%96%B0%E6%89%8B%E5%AD%A6%E4%B9%A0/3rd-level/4th-level/</guid>
+      <description>&lt;h1 id=&#34;4th-level-of-menu&#34;&gt;&#xA;  4th Level of Menu&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#4th-level-of-menu&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;&#xA;  Caesorum illa tu sentit micat vestes papyriferi&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#caesorum-illa-tu-sentit-micat-vestes-papyriferi&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Inde aderam facti; Theseus vis de tauri illa peream. Oculos &lt;strong&gt;uberaque&lt;/strong&gt; non&#xA;regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo;&#xA;gestanda nitidi, vero? Dum ne pectoraque testantur.&lt;/p&gt;&#xA;&lt;p&gt;Venasque repulsa Samos qui, exspectatum eram animosque hinc, &#xA;  &lt;a href=&#34;http://www.creveratnon.net/apricaaetheriis&#34;&gt;aut&#xA;manes&lt;/a&gt;, Assyrii. Cupiens auctoribus&#xA;pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae&#xA;iusto! Sedes ante dum superest &lt;strong&gt;extrema&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
